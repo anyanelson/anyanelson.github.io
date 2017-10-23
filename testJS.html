@@ -1,0 +1,77 @@
+<html>
+	<head>	
+		<title>	
+			Test JavaScript
+		</title>
+		
+		<script>
+			alert("Hello, Hola and Hi! ");
+			
+			function changeColor(){
+				//change the color
+				document.getElementById("purple").style.background = "magenta";
+				
+
+				//change the text
+				document.getElementById("purple").innerHTML = "Magenta!!!!!!"
+
+				//change the color of font
+				document.getElementById("purple").style.color = "white";
+				}
+
+				function changeColor2(){
+				//change the color
+				document.getElementById("blue").style.background = "blue";
+				
+
+				//change the text
+				document.getElementById("blue").innerHTML = "Navy blue"
+
+				//change the color of font
+				document.getElementById("purple").style.color = "white";
+			}
+		</script>
+		
+		<style>
+			nav{
+        		background-color:pink;
+        		color:white;
+        	}
+        	a:link{
+        		color:white;
+        		background-color:pink;
+        		}
+        	a:visited{
+        		color:grey;
+        		background-color:white;
+        		}
+        	a:hover{
+        		color:grey;
+        		background-color:pink;
+        		font-size:60px;
+        		}	
+		</style>
+	</head>
+	<body style="background-color:skyblue;font-size:30px;font-weight:bolder;"> 
+		<div style="margin:30px;background-color:white;padding:15px;border-radius:25px;text-align:center;">
+		<nav>
+			Home
+			<a href="aboutme.html" />
+				About me...
+			</a>
+			<a href="projects.html">
+				Projects...
+			</a>
+
+		</nav>
+	    <section>
+	    	<p id="purple" onclick="changeColor();">
+	    		purple
+	    	</p>
+
+	    	<p id="blue" onclick="changeColor2();">
+	    		blue
+	    	</p>
+        </section>   
+	</body>
+</html>
