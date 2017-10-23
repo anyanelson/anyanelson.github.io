@@ -7,16 +7,16 @@
 		<script>
 			alert("Hello, Hola and Hi! ");
 			
-			function changeColor(){
+			function changeColor1(){
 				//change the color
-				document.getElementById("purple").style.background = "magenta";
+				document.getElementById("magenta").style.background = "magenta";
 				
 
 				//change the text
-				document.getElementById("purple").innerHTML = "Magenta!!!!!!"
+				document.getElementById("magenta").innerHTML = "Magenta!!!!!!"
 
 				//change the color of font
-				document.getElementById("purple").style.color = "white";
+				document.getElementById("magenta").style.color = "white";
 				}
 
 				function changeColor2(){
@@ -28,7 +28,29 @@
 				document.getElementById("blue").innerHTML = "Navy blue"
 
 				//change the color of font
-				document.getElementById("purple").style.color = "white";
+				document.getElementById("blue").style.color = "white";
+			}
+				function changeColor3(){
+				//change the color
+				document.getElementById("grey").style.background = "grey";
+				
+
+				//change the text
+				document.getElementById("grey").innerHTML = " Grey "
+
+				//change the color of font
+				document.getElementById("grey").style.color = "white";
+			}
+				function changeColor4(){
+				//change the color
+				document.getElementById("black").style.background = "black";
+				
+
+				//change the text
+				document.getElementById("black").innerHTML = "black"
+
+				//change the color of font
+				document.getElementById("black").style.color = "white";
 			}
 		</script>
 		
@@ -65,12 +87,19 @@
 
 		</nav>
 	    <section>
-	    	<p id="purple" onclick="changeColor();">
-	    		purple
+	    	<p id="magenta" onclick="changeColor1();">
+	    		magenta
 	    	</p>
 
 	    	<p id="blue" onclick="changeColor2();">
 	    		blue
+	    	</p>
+	    	<p id="grey" onclick="changeColor3();">
+	    		grey
+	    	</p>
+
+	    	<p id="black" onclick="changeColor4();">
+	    		black
 	    	</p>
         </section>   
 	</body>
