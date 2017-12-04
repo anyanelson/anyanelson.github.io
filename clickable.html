@@ -23,20 +23,18 @@
         		}	
 		</style>
 		<script>
-			function clickMe () { 
+			function clickMe() { 
 				var name = document.getElementById("nameText").value;
 				document.getElementById("circle").innerHTML = "Hello, " + name + "!";
 				document.getElementById("circle").style.color = "grey";
 				document.getElementById("circle").style.backgroundColor = "white";
-			<section>
 			}
-			function clickMe1 () { 
+			function clickMe2() { 
 				var name = document.getElementById("nameText2").value;
-				document.getElementById("circle2").innerHTML = "Hello, " + name2 + "!";
+				document.getElementById("circle2").innerHTML = "Hello, " + name + "!";
 				document.getElementById("circle2").style.color = "grey";
 				document.getElementById("circle2").style.backgroundColor = "white";
 			}
-			<section/>
 		</script>
 	</head>
 	<body style="background-color:skyblue;font-size;16px;font-weight:bolder;"> 
@@ -52,15 +50,17 @@
 		</nav>
 	    <section>
 	    	<div id="circle" style="height:100px;width:150px;background-color:lightgrey;border-radius:100px;position:relative;top:100px;left:300px;padding-top:50px;font-size:25px"></div>
-	    </section>	
-	    	<div id="circle2" style="height:100px;width:150px;background-color:lightgrey;border-radius:100px;position:relative;top:100px;left:300px;padding-top:50px;font-size:25px"></div>
-	    		Name: <input type="text" id="nameText" value=" "/> 
-	    		 <input type="button" value="click me!" onclick="clickMe();" /> 
-         <section>
-            <img src="Bird.jpg" style="height:300px;"/>
+	    	 	<img src="Bird.jpg" style="height:300px;"/>
             <br>
-            Name: <input type="text" id="nameText2" value=" "/> 
-            <input type="button" value="click me!" onclick="clickMe2();" /> 
+             Name: <input type="text" id="nameText" value=""/> 
+            <input type="button" value="click me!" onclick="clickMe();" />
+        </section>
+	    <section>	
+	    	<div id="circle2" style="height:100px;width:150px;background-color:lightgrey;border-radius:150px;position:relative;top:0.1px;left:300px;padding-top:50px;font-size:25px"></div>
+	    		 <img src="moonjelly.jpg" style="height:300px;"/>
+	    		 <br>
+	    		 Name: <input type="text" id="nameText2" value=""/> 
+	    		 <input type="button" value="click me!" onclick="clickMe2();" /> 
         </section>
 	</body>
 </html>
