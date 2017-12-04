@@ -5,7 +5,7 @@
 		</title>
 		<style>
 			nav{
-        		background-color:pink;
+        		background-color:lightgrey;
         		color:white;
         	}
         	a:link{
@@ -18,27 +18,49 @@
         		}
         	a:hover{
         		color:black;
-        		background-color:pink;
+        		background-color:lightgrey;
         		font-size:60px;
         		}	
 		</style>
+		<script>
+			function clickMe () { 
+				var name = document.getElementById("nameText").value;
+				document.getElementById("circle").innerHTML = "Hello, " + name + "!";
+				document.getElementById("circle").style.color = "grey";
+				document.getElementById("circle").style.backgroundColor = "white";
+			<section>
+			}
+			function clickMe1 () { 
+				var name = document.getElementById("nameText2").value;
+				document.getElementById("circle2").innerHTML = "Hello, " + name2 + "!";
+				document.getElementById("circle2").style.color = "grey";
+				document.getElementById("circle2").style.backgroundColor = "white";
+			}
+			<section/>
+		</script>
 	</head>
 	<body style="background-color:skyblue;font-size;16px;font-weight:bolder;"> 
-		<div style="margin:30px;background-color:pink;padding:15px;border-radius:25px;text-align:center;">
+		<div style="margin:30px;background-color:lightgrey;padding:15px;border-radius:25px;text-align:center;">
 		<nav>
 			Home
 			<a href="aboutme.html" />
 				About me...
 			</a>
-			<a href="projects.html">
+			<a href="projects.html" />
 				Projects...
 			</a>
 		</nav>
 	    <section>
+	    	<div id="circle" style="height:100px;width:150px;background-color:lightgrey;border-radius:100px;position:relative;top:100px;left:300px;padding-top:50px;font-size:25px"></div>
+	    </section>	
+	    	<div id="circle2" style="height:100px;width:150px;background-color:lightgrey;border-radius:100px;position:relative;top:100px;left:300px;padding-top:50px;font-size:25px"></div>
+	    		Name: <input type="text" id="nameText" value=" "/> 
+	    		 <input type="button" value="click me!" onclick="clickMe();" /> 
+         <section>
             <img src="Bird.jpg" style="height:300px;"/>
             <br>
-            Name: <input type="text" /> 
-            <input type="button" value="click me!" /> 
+            Name: <input type="text" id="nameText2" value=" "/> 
+            <input type="button" value="click me!" onclick="clickMe2();" /> 
         </section>
 	</body>
 </html>
