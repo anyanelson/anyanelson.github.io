@@ -1,0 +1,106 @@
+<html>
+	<head>	
+		<title>	
+			Test JavaScript
+		</title>
+		
+		<script>
+			alert("Hello, Hola and Hi! ");
+			
+			function changeColor1(){
+				//change the color
+				document.getElementById("magenta").style.background = "magenta";
+				
+
+				//change the text
+				document.getElementById("magenta").innerHTML = "Magenta!!!!!!"
+
+				//change the color of font
+				document.getElementById("magenta").style.color = "white";
+				}
+
+				function changeColor2(){
+				//change the color
+				document.getElementById("blue").style.background = "blue";
+				
+
+				//change the text
+				document.getElementById("blue").innerHTML = "Navy blue"
+
+				//change the color of font
+				document.getElementById("blue").style.color = "white";
+			}
+				function changeColor3(){
+				//change the color
+				document.getElementById("grey").style.background = "grey";
+				
+
+				//change the text
+				document.getElementById("grey").innerHTML = " Grey "
+
+				//change the color of font
+				document.getElementById("grey").style.color = "white";
+			}
+				function changeColor4(){
+				//change the color
+				document.getElementById("black").style.background = "black";
+				
+
+				//change the text
+				document.getElementById("black").innerHTML = "black"
+
+				//change the color of font
+				document.getElementById("black").style.color = "white";
+			}
+		</script>
+		
+		<style>
+			nav{
+        		background-color:pink;
+        		color:white;
+        	}
+        	a:link{
+        		color:white;
+        		background-color:pink;
+        		}
+        	a:visited{
+        		color:grey;
+        		background-color:white;
+        		}
+        	a:hover{
+        		color:grey;
+        		background-color:pink;
+        		font-size:60px;
+        		}	
+		</style>
+	</head>
+	<body style="background-color:skyblue;font-size:30px;font-weight:bolder;"> 
+		<div style="margin:30px;background-color:white;padding:15px;border-radius:25px;text-align:center;">
+		<nav>
+			Home
+			<a href="aboutme.html" />
+				About me...
+			</a>
+			<a href="projects.html">
+				Projects...
+			</a>
+
+		</nav>
+	    <section>
+	    	<p id="magenta" onclick="changeColor1();">
+	    		magenta
+	    	</p>
+
+	    	<p id="blue" onclick="changeColor2();">
+	    		blue
+	    	</p>
+	    	<p id="grey" onclick="changeColor3();">
+	    		grey
+	    	</p>
+
+	    	<p id="black" onclick="changeColor4();">
+	    		black
+	    	</p>
+        </section>   
+	</body>
+</html>
