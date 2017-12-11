@@ -35,8 +35,23 @@
 				document.getElementById("circle2").style.color = "grey";
 				document.getElementById("circle2").style.backgroundColor = "white";
 			}
+				function Test(divName) {
+					setInterval(function(){ makeWhite(divName);}, 1000);
+					setInterval(function() { makeLightgrey(divName);}, 2000);
+				
+				}
+				function makeWhite(divName){
+					document.getElementById(divName).style.backgroundColor = "white";
+
+				}
+				function makeLightgrey(divName){
+					document.getElementById(divName).style.backgroundColor = "lightgrey"
+				}
 		</script>
 	</head>
+		<body id="crazy" style="background-color:white; color:white;
+		font-size:16px; font-weight:bolder;">
+		<div id="crazy2" style="margin:30px;background-color:lightgrey;padding:30px;border-radius:100px;text-align:center;">
 	<body style="background-color:skyblue;font-size;16px;font-weight:bolder;"> 
 		<div style="margin:30px;background-color:lightgrey;padding:15px;border-radius:25px;text-align:center;">
 		<nav>
@@ -51,16 +66,20 @@
 	    <section>
 	    	<div id="circle" style="height:100px;width:150px;background-color:lightgrey;border-radius:100px;position:relative;top:100px;left:300px;padding-top:50px;font-size:25px"></div>
 	    	 	<img src="Bird.jpg" style="height:300px;"/>
-            <br>
+     		<br>
              Name: <input type="text" id="nameText" value=""/> 
             <input type="button" value="click me!" onclick="clickMe();" />
         </section>
-	    <section>	
 	    	<div id="circle2" style="height:100px;width:150px;background-color:lightgrey;border-radius:150px;position:relative;top:0.1px;left:300px;padding-top:50px;font-size:25px"></div>
-	    		 <img src="moonjelly.jpg" style="height:300px;"/>
-	    		 <br>
-	    		 Name: <input type="text" id="nameText2" value=""/> 
-	    		 <input type="button" value="click me!" onclick="clickMe2();" /> 
-        </section>
+	    	 <img src="moonjelly.jpg" style="height:300px;"/>
+	    	Name: <input type="text" id="nameText2" value=""/> 
+	    	 <input type="button" value="click me!" onclick="clickMe2();" />
+	    		<br>
+       		<section>
+       			<input type="button" value="click me please :p" onclick="Test('crazy');">
+       		</section>
+       		<section>
+       			<input type="button" value="click me please :p" onclick="Test('crazy2');">
+       		</section>      	
 	</body>
 </html>
