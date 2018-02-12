@@ -4,6 +4,22 @@
 		<title> Fun Facts </title>
 		<script>
 
+		function fact1(){
+		document.getElementById("Jellyfish").innerHTML="<img src='jellyfishy.jpg' style='height:250px;' />";
+		document.getElementById("Jellyfish").style.listStyleType="none";
+		}
+		function fact2(){
+		document.getElementById("Harry").innerHTML="<img src='herring.jpg' style='height:250px;' />";
+		document.getElementById("Harry").style.listStyleType="none";
+		}
+		function fact3(){
+		document.getElementById("Tordi").innerHTML="<img src='immortaljelly.jpg' style='height:250px;' />";
+		document.getElementById("Tordi").style.listStyleType="none";
+		}
+		function fact4(){
+		document.getElementById("Nemo").innerHTML="<img src='Clownfish.jpg' style='height:250px;' />";
+		document.getElementById("Nemo").style.listStyleType="none";
+		}
 		</script>
 		<style>
 			nav{
@@ -26,17 +42,16 @@
 		<section>
 		<p>Click the text to see a picture of that animal</p>
 			<p>
-			<li> A group of Jellyfish is called a smack. </li>
+			<li onclick="fact1()" id="Jellyfish"> A group of Jellyfish is called a smack. </li>
 			</p>
 			<p>
-			<li> A group of Herring is a seig.</li>
+			<li onclick="fact2()" id="Harry"> A group of Herring is a seig.</li>
 			</p>
 			<p>
-			<li>Turritopsis dohrnii are a small sea jelly that are able to grow to adulthood, revert back to a baby and repeat the cycle.  Even though this species of sea jelly has this rare talent, they often die from diseases or predators. </li>
+			<li onclick="fact3()" id="Tordi">Turritopsis dohrnii are a small sea jelly that are able to grow to adulthood, revert back to a baby and repeat the cycle.  Even though this species of sea jelly has this rare talent, they often die from diseases or predators. </li>
 			</p>
 			<p>
-			<li>
-			Clownfish schools opperate in a hierarchy. In these schools the females are always on the top. When the top female dies it is common for a male to change gender and take over leading the school. 
+			<li onclick="fact4()" id="Nemo">Clownfish schools opperate in a hierarchy. In these schools the females are always on the top. When the top female dies it is common for a male to change gender and take over leading the school. 
 			</li>
 			</p>
 			<p>
