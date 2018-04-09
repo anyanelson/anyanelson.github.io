@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title> Draw </title>
+		<script>
+		var pageHTML = "";
+
+		function mouse(){
+			var x = event.clientX;     // Get the horizontal coordinate
+			var y = event.clientY;     // Get the vertical coordinate
+			var coor = "X coords: " + x + ", Y coords: " + y;
+			//alert(coor);
+
+			pageHTML = pageHTML + "<div class='line' style='position:fixed;left:" + x + ";top:" + y 
+						+ ";' ></div>";
+
+			document.getElementById("draw").innerHTML= pageHTML;
+		
+		}
+
+		</script>
+		<style type="text/css">
+			
+			.line{
+				background-color: lightblue; 
+				width:10px;
+				height:15px;
+			}
+		</style>
+	</head>
+	<body onclick="mouse()">
+		<input type="button" value="eraser"/>
+		<div id="draw">
+			<section>
+				This website allows you to draw whatever you want!</p>
+			</section>
+		</div>
+	</body>
+	
+</html>
