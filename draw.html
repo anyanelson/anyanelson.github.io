@@ -16,6 +16,48 @@
 			document.getElementById("draw").innerHTML= pageHTML;
 		
 		}
+		function eraser(){
+			location.reload();
+		}
+
+		function start(){
+
+			var color = "#";
+
+			for(var i = 0; i < 6; i++){
+				color = color + getHexNum();
+			}
+
+			//alert(color);
+
+			document.getElementsByClassName("line").style.backgroundColor = color;
+
+		}
+
+		function getHexNum(){
+			var random = Math.floor(Math.random() * 16);
+
+			if(random == 10)
+				return "a";
+
+			if(random == 11)
+				return "b";	
+
+			if(random == 12)
+				return "c";
+
+			if(random == 13)
+				return "d";
+
+			if(random == 14)
+				return "e";
+
+			if(random == 15)
+				return "f";
+
+
+			return random;
+		}
 
 		</script>
 		<style type="text/css">
@@ -27,10 +69,11 @@
 			}
 		</style>
 	</head>
-	<body onclick="mouse()" >
-		<input type="button" value="eraser"/>
+	<body onload="start();" onclick="mouse()" >
+		<input type="button" value="eraser" onclick="eraser()"/>
 		<div id="draw">
 			<section>
+				<div class="line" style="display:none;"></div>
 				This website allows you to draw</p>
 			</section>
 		</div>
