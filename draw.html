@@ -5,15 +5,17 @@
 		var pageHTML = "";
 
 		function mouse(){
-			var x = event.clientX;     // Get the horizontal coordinate
-			var y = event.clientY;     // Get the vertical coordinate
+			var x = event.clientX;      //Get the horizontal coordinate
+			var y = event.clientY;     //Get the vertical coordinate
 			var coor = "X coords: " + x + ", Y coords: " + y;
 			//alert(coor);
+			if(y>24){
 
 			pageHTML = pageHTML + "<div class='line' style='position:fixed;left:" + x + ";top:" + y 
 						+ ";' ></div>";
 
 			document.getElementById("draw").innerHTML= pageHTML;
+			}
 		
 		}
 		function eraser(){
@@ -41,19 +43,19 @@
 			var random = Math.floor(Math.random() * 16);
 
 			if(random == 10)
-				return "a";
+				return "f";
 
 			if(random == 11)
-				return "b";	
+				return "f";	
 
 			if(random == 12)
-				return "c";
+				return "f";
 
 			if(random == 13)
-				return "d";
+				return "f";
 
 			if(random == 14)
-				return "e";
+				return "f";
 
 			if(random == 15)
 				return "f";
