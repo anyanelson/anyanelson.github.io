@@ -11,14 +11,14 @@
 			//alert(coor);
 			if(y>24){
 
-			pageHTML = pageHTML + "<div class='line' style='position:fixed;left:" + x + ";top:" + y 
+			pageHTML = pageHTML + "<div class='line rColor' style='position:fixed;left:" + x + ";top:" + y 
 						+ ";' ></div>";
 
 			document.getElementById("draw").innerHTML= pageHTML;
 			}
 		
 		}
-		function eraser(){
+		function erase(){
 			location.reload();
 		}
 
@@ -30,11 +30,11 @@
 				color = color + getHexNum();
 			}
 
-			alert(color);
+			//alert(color);
 			for (var i = 0; i < document.getElementsByClassName("line").length; i++){
-				alert("changing color");
-				alert(document.getElementsByClassName("line")[i]);
-				document.getElementsByClassName("line")[i].style.backgroundColor = "red";
+				//alert("changing color");
+				//alert(document.getElementsByClassName("line")[i]);
+				document.getElementsByClassName("rColor")[i].style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 			}
 			//document.getElementById("test").style.backgroundColor = color;
 		}
@@ -68,19 +68,21 @@
 		<style type="text/css">
 			
 			.line{
-				background-color: lightblue; 
+				background-color:lightblue;
 				width:10px;
 				height:15px;
 			}
 		</style>
 	</head>
-	<body onload="" onclick="mouse()" >
-		<input type="button" value="eraser" onclick="eraser()"/>
+	<body onload="" onclick="mouse()">
+		<input type="button" value="erase" onclick="erase()"/>
 		<input type="button" value="Pick Random Color" onclick="changeColor();" />
+		 
+
 		<div id="draw">
 			<section>
 
-				<div class="line" id="test" style="height:10px;width:10px;background-color:blue;"></div>
+				<div class="line" id="test" style="display:none;height:0px;width:10px;background-color:blue;"></div>
 				This website allows you to draw</p>
 			</section>
 		</div>
